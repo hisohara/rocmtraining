@@ -12,6 +12,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 True
 >>> torch.version.hip
 '6.4.43484-123eb5128'
+>>> torch.cuda.get_device_name()
+'AMD Instinct MI300X'
 ```
 
 ## Docker images
