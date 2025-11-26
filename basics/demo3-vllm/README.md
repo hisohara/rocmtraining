@@ -2,7 +2,8 @@
 ## vLLM serving (11/25/2025 on AMD Developer Cloud)
 ```bash
 $ docker pull rocm/vllm:rocm7.0.0_vllm_0.11.1_20251103
-$ docker run -it --network=host --group-add=video --ipc=host --cap-add=SYS_PTRACE --security-opt seccomp=unconfined --privileged --device /dev/kfd --device /dev/dri rocm/vllm:rocm7.0.0_vllm_0.11.1_20251103
+$ docker run -it --network=host --group-add=video --ipc=host --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
+--privileged --device /dev/kfd --device /dev/dri rocm/vllm:rocm7.0.0_vllm_0.11.1_20251103
 
 # vllm serve Qwen/Qwen2-7B-Instruct
 # curl http://localhost:8000/v1/completions     -H "Content-Type: application/json"     -d '{
